@@ -67,6 +67,7 @@ jobs:
         command: cves, quickview
         only-severities: critical, high
         sarif-file: scout-report.sarif
+        exit-code: true
 
     - name: Upload Artifact Dokcer Scout
       uses: actions/upload-artifact@v3
